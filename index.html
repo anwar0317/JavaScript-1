@@ -20,54 +20,84 @@
             <thead class="table-dark">
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Class Interval</th>
+                <th scope="col">Numerical Grade</th>
                 <th scope="col">Letter Grade</th>
                 <th scope="col">Grade Point</th>
+                <th scope="col">Interpretation</th>
               </tr>
             </thead>
             <tbody>
               <tr class="table-primary">
                 <th scope="row">1.</th>
-                <td>80-100</td>
+                <td>80% and above</td>
                 <td>A+</td>
-                <td>5</td>
+                <td>4.00</td>
+                <td>Outstanding</td>
               </tr>
               <tr class="table-secondary">
                 <th scope="row">2.</th>
-                <td>70-79</td>
+                <td>75% to less than 80%</td>
                 <td>A</td>
-                <td>4</td>
+                <td>3.75</td>
+                <td>Excellent</td>
               </tr>
               <tr class="table-success">
                 <th scope="row">3.</th>
-                <td >60-69</td>
+                <td >70% to less than 75%</td>
                 <td>A-</td>
                 <td>3.5</td>
+                <td>Very Good</td>
               </tr>
               <tr class="table-secondary">
                 <th scope="row">4.</th>
-                <td >50-59</td>
-                <td>B</td>
-                <td>3</td>
+                <td >65% to less than 70%</td>
+                <td>B+</td>
+                <td>3.25</td>
+                <td>Good</td>
+            
               </tr>
               <tr class="table-success">
                 <th scope="row">5.</th>
-                <td >40-49</td>
-                <td>C</td>
-                <td>2</td>
+                <td >60% to less than 65%</td>
+                <td>B</td>
+                <td>3.00</td>
+                <td>Satisfactory</td>
               </tr>
               <tr class="table-secondary">
                 <th scope="row">6.</th>
-                <td> 33-39</td>
-                <td>D</td>
-                <td>1</td>
+                <td> 55% to less than 60%</td>
+                <td>B-</td>
+                <td>2.75</td>
+                <TD>Below Satisfactory</TD>
               </tr>
               <tr class="table-success">
                 <th scope="row">7.</th>
-                <td >0-32</td>
+                <td >50% to less than 55%</td>
+                <td>C+</td>
+                <td>2.50</td>
+                <td>Average</td>
+              </tr>
+              <tr class="table-secondary">
+                <th scope="row">8.</th>
+                <td> 45% to less than 50%</td>
+                <td>C</td>
+                <td>2.25</td>
+                <TD>Pass</TD>
+              </tr>
+              <tr class="table-success">
+                <th scope="row">9.</th>
+                <td >40% to less than 45%</td>
+                <td>D</td>
+                <td>2.00</td>
+                <td>Poor</td>
+              </tr>
+              <tr class="table-secondary">
+                <th scope="row">10.</th>
+                <td>  less than 40%</td>
                 <td>F</td>
-                <td>0</td>
-              
+                <td>0.00</td>
+                <TD>Fail</TD>
+              </tr>
             </tbody>
           </table>
        </div>
@@ -82,24 +112,33 @@
     <script>
         var num = prompt("Enter your Marks:");
         if(num >= 80 && num <= 100){
-            document.write("Your grade is A+ and point is 5 ");
+            document.write("Your grade is A+ and point is 4 ");
             }
-        else if(num >= 70 && num <80 ){
-            document.write("Your grade is A and point is 4");
+        else if(num >= 75 && num <80 ){
+            document.write("Your grade is A and point is 3.75");
             }
-        else if(num >= 60 && num <70){
+        else if(num >= 70 && num <75){
             document.write("Your grade is A- and point is 3.50");
             }
-        else if(num >= 50 && num <60){
-            document.write("Your grade is B and point is 3");
+        else if(num >= 65 && num <70){
+            document.write("Your grade is B+ and point is 3.25");
             }
-        else if(num >= 40 && num <50){
-            document.write("Your grade is C and point is 2");
+        else if(num >= 60 && num <65){
+            document.write("Your grade is B and point is 3.00");
             }
-        else if(num >= 33 && num <40){
-            document.write("Your grade is D and point is 1");
+        else if(num >= 55 && num <60){
+            document.write("Your grade is B- and point is 2.75");
             }
-        else if(num >= 0 && num <33){
+        else if(num >= 50 && num <55){
+            document.write("Your grade is C+ and point is 2.50");
+            } 
+        else if(num >= 45 && num <50){
+            document.write("Your grade is C and point is 2.25");
+            }   
+        else if(num >= 40 && num <45){
+            document.write("Your grade is D and point is 2.00");
+            }   
+        else if(num >= 0 && num <40){
             document.write("Opss! Fail");
             }
         else {
